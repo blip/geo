@@ -67,6 +67,7 @@ customize_domains=$(
 	cat <<'EOF'
 FILENAME == "domains.custom" && /[^[:space:]]/ {
   gsub(/^[[:space:]]+|[[:space:]]*#.*|[[:space:]]+$/, "");
+  if ($0 == "") { next }
   if (tolower($0) == "[add]") { mode="add"; next }
   if (tolower($0) == "[remove]") { mode="remove"; next }
 
