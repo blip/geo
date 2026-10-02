@@ -17,11 +17,15 @@
               gen-domains = pkgs.callPackage ./pkgs/gen-domains {
                 convert-domains = pkgs.callPackage ./pkgs/convert-domains { };
               };
+              gen-ips = pkgs.callPackage ./pkgs/gen-ips {
+                convert-ips = pkgs.callPackage ./pkgs/convert-ips { };
+              };
             };
             devShells.default = pkgs.mkShellNoCC {
               name = "shell";
               packages = [
                 config.packages.gen-domains
+                config.packages.gen-ips
               ];
             };
           };
