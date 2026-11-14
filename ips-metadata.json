@@ -1,0 +1,12 @@
+{
+  "attribution": "This product includes GeoLite2 data created by MaxMind, available from https://www.maxmind.com.",
+  "build_time": "2026-11-13T17:11:28Z",
+  "countries": [
+    "GB",
+    "US"
+  ],
+  "country_field": "country.iso_code",
+  "database": "GeoLite2-Country",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sha256": "c3ea0f8763a72c081d4abaf3366270d46414c55f6e36321621c6b59d53f9b17c"
+}
